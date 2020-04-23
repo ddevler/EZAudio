@@ -199,6 +199,12 @@ OSStatus EZOutputGraphRenderCallback(void                       *inRefCon,
 - (void)setup
 {
     //
+    // Set the sameple rate based on audio seesion value. default is 44.1 which
+    // breaks on new devices and iOS 13. iOS 13 defaults to 44.8
+    //
+    EZOutputDefaultSampleRate = [[AVAudioSession sharedInstance] sampleRate];
+    
+    //
     // Create structure to hold state data
     //
     self.info = (EZOutputInfo *)malloc(sizeof(EZOutputInfo));

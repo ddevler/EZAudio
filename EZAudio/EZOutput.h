@@ -38,7 +38,7 @@
 //------------------------------------------------------------------------------
 
 FOUNDATION_EXPORT UInt32  const EZOutputMaximumFramesPerSlice;
-FOUNDATION_EXPORT Float64 const EZOutputDefaultSampleRate;
+FOUNDATION_EXPORT Float64 EZOutputDefaultSampleRate;
 
 //------------------------------------------------------------------------------
 #pragma mark - EZOutputDataSource
